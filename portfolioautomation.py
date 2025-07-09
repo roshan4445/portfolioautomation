@@ -12,7 +12,7 @@ class TestPortfolio:
         driver.maximize_window()
         obj = Portfolio(driver)
         yield driver, obj
-        time.sleep(3)  # Optional: Keep browser open briefly to view result
+        time.sleep(3) 
         driver.quit()
 
     def test_home(self, setup_requirements):
